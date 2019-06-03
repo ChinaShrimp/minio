@@ -395,7 +395,7 @@ func setCorsHandler(h http.Handler) http.Handler {
 	}
 
 	c := cors.New(cors.Options{
-		AllowedOrigins: []string{"*"},
+		AllowedOrigins: []string{"http://localhost:8080"},
 		AllowedMethods: []string{
 			http.MethodGet,
 			http.MethodPut,
